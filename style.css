@@ -14,7 +14,7 @@ body {
     margin-left: 10px;
   }
   
-  #message {
+  #message,#guessNo {
     margin-top: 20px;
     font-weight: bold;
   }

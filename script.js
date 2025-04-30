@@ -7,6 +7,7 @@ const maxGuesses = 5;
 function checkGuess() {
   const guessInput = document.getElementById("guessInput");
   const message = document.getElementById("message");
+  const guessNo = document.getElementById("guesses");
   const guess = Number(guessInput.value);
 
   if (isNaN(guess) || guess < lowestNum || guess > highestNum) {
@@ -24,6 +25,7 @@ function checkGuess() {
     guessInput.disabled = true;
   } else if (guess < answer) {
     message.textContent = "Too low!";
+    guessNo.textContent = `Guess No. ${guesses}`
   } else {
     message.textContent = "Too high!";
   }
