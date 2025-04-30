@@ -25,7 +25,7 @@ function checkGuess() {
     guessInput.disabled = true;
   } else if (guess < answer) {
     message.textContent = "Too low!";
-    guessNo.textContent = `Guess No. ${guesses}`
+    guessNo.textContent = `Guess No. ${guesses}`;
   } else {
     message.textContent = "Too high!";
   }
