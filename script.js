@@ -16,6 +16,7 @@ function checkGuess() {
   }
 
   guesses++;
+  guessNo.textContent = `Guess No. ${guesses}`;
 
   if (guess === answer) {
     message.textContent = `Correct! The number was ${answer}. You won in ${guesses} guesses.`;
@@ -25,7 +26,6 @@ function checkGuess() {
     guessInput.disabled = true;
   } else if (guess < answer) {
     message.textContent = "Too low!";
-    guessNo.textContent = `Guess No. ${guesses}`;
   } else {
     message.textContent = "Too high!";
   }
