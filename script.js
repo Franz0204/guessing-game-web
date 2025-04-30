@@ -16,7 +16,7 @@ function checkGuess() {
   }
 
   guesses++;
-  guessNo.textContent = `Guess No. ${guesses}`;
+  guessNo.textContent = `Guesses: ${guesses}`;
 
   if (guess === answer) {
     message.textContent = `Correct! The number was ${answer}. You won in ${guesses} guesses.`;
